@@ -1,26 +1,26 @@
-const rpc = require("discord-rpc")
+const rpc = require("discord-rpc") //Install discord-rpc package
 const client = new rpc.Client({ transport: 'ipc' })
 
 client.on('ready', async() => {
    client.setActivity({
-	details : "Yes! IM ChinGH#2459",
-	state: "Smileeeee",
+	details : "Text here",
+	state: "Text here",
 	startTimestamp: new Date(),
-	largeImageKey : "wee",
-	largeImageText : "CGH DC",
-	smallImageKey : "sus",
-	smallImageText: "SUSSY-EVER",
+	largeImageKey : "Text here / Image String URL",
+	largeImageText : "Text here",
+	smallImageKey : "Text here / Image String URL",
+	smallImageText: "Text here",
 	buttons : [
           {
-		label : "Invite CGH Bot" , 
-		url : "https://discord.com/api/oauth2/authorize?client_id=837564399833055272&permissions=4063558227&scope=bot%20applications.commands",
+		label : "Text here" , 
+		url : "String url text",
 	   },
 	   {
-		label : "CGH Support Server",
-		url : "https://discord.gg/ZaExNbkjPt",
+		label : "Text here",
+		url : "String URL text",
 	   }
 	 ]
     })
 })
 console.log('\x1b[33mClient is ready. Presence status is ready to use.\x1b[0m');
-client.login({ clientId : "837564399833055272" }).catch(console.error);
+client.login({ clientId : "your bot id here" }).catch(console.error);
